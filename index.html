@@ -49,7 +49,7 @@ firebase.initializeApp(firebaseConfig);
     // Get a reference to the database service
     var database = firebase.database().ref();
     var msg = inpu.value;
-    database.child("text").set(msg);
+    database.push().set(msg);
   }
 </script>
 </body>
